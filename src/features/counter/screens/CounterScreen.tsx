@@ -17,7 +17,7 @@ import { RootState } from 'typesafe-actions';
         <Button title="Increase" onPress={() => dispatch(doIncrement.request())} />
       </View>
       <View style={styles.subs}>
-        <Button title="Increase" onPress={() => dispatch(doDecrement.request())} />
+        <Button title="Decrease" onPress={() => dispatch(doDecrement.request())} />
       </View>
     </View>
   )
