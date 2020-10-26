@@ -12,7 +12,7 @@ import { RootState } from 'typesafe-actions';
 
   return(
     <View style={styles.contents}>
-      <Text>Counter value: {value}</Text>
+      <Text style={styles.title}>Counter value: {value}</Text>
       <View style={styles.subs}>
         <Button title="Increase" onPress={() => dispatch(doIncrement.request())} />
       </View>
@@ -27,6 +27,9 @@ const styles = StyleSheet.create({
   contents: {
     flex: 1,
     flexDirection: 'column'
+  },
+  title: {
+    marginTop: 60
   },
   subs: {
     marginTop: 10,
